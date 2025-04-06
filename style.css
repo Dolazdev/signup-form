@@ -17,7 +17,7 @@
 
 @font-face {
     font-family: 'CustomFont';
-    src: url("/Norse-Bold.otf") format("opentype");
+    src: url("Norse-Bold.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
 }
@@ -30,7 +30,7 @@
 }
 
 .aside{
-    background-image: url("/halie-west-25xggax4bSA-unsplash.jpg");
+    background-image: url("halie-west-25xggax4bSA-unsplash.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
