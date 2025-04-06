@@ -1,0 +1,194 @@
+:root {
+    --primary-color: #596D48;
+    --secondary-color: #596D48;
+    --background-color: #f9fafb;
+    --text-color: #2c3e50;
+    --font-family: Arial, sans-serif;
+    --heading-text-color: #ffffff;
+    --heading-background: rgba(0, 0, 0, 0.6);
+    --form-background: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url("/fonts/Norse-Bold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--font-family);
+}
+
+.aside{
+    background-image: url("/images/halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    color: var(--heading-text-color);
+    position: relative;
+}
+
+.aside-layer{
+    display: flex;
+    align-items: center;
+    margin-top: 30vh;
+    justify-content: center;
+    font-size: 5rem;
+    font-family: 'CustomFont', sans-serif;
+    gap: 20px;
+    padding: 16px 0;
+    width: 100%;
+    background-color: var(--heading-background);
+}
+
+img {
+    width: 80px;
+    height: auto;
+    align-self: center;
+}
+
+#credit{
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+#credit p,a{
+    font-size: 20px;
+    color: var(--heading-text-color)
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    background-color: var(--background-color);
+}
+
+
+.main > header {
+    padding: 15vh 48px 48px 48px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: left;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.header h3, h4 {
+    margin: 0 0 32px 0;
+    max-width: 750px;
+}
+
+#form {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 32px;
+    background-color: var(--form-background);
+    padding: 32px 48px;
+    position: relative;
+}
+
+fieldset{
+    border: none;
+    width: 100%;
+}
+
+legend{
+    font-size: 22px;
+    font-weight:600 ;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.form-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1.6px;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    padding: 8px;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    font-size: 16px;
+    width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus {
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#submit {
+    padding: 32px 48px;
+    position: absolute;
+    bottom: -160px;
+    left: 0;
+}
+
+button[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"]:hover {
+    background-color: var(--secondary-color);
+    opacity: 0.9;
+}
+
+button[type="submit"]:active {
+    background-color: var(--primary-color);
+}
+
+#registered{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#registered a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight:bold;
+}
+
+#registered a:hover{
+    color: var(--text-color)
+}
